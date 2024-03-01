@@ -10,7 +10,7 @@ function App() {
   const resultsNumber = 10
 
   useEffect(() => {
-    fetch('/api')
+    fetch('/api', { cache: "no-cache" })
       .then(data => data.json())
       .then(jsonData => setCountries(jsonData.sort((a, b) => a.name.common.localeCompare(b.name.common))))
   }, [])
