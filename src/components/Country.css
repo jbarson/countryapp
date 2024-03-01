@@ -1,0 +1,13 @@
+.info {
+  display: none;
+  border: 1px solid slategray;
+  border-radius: 5px;
+}
+
+img {
+  margin: 5px;
+}
+
+.info.show {
+  display: block;
+}
